@@ -1,11 +1,8 @@
-// Teammates: Guangyu Min, Jiayuan Chen, Yanxiang Zhou
-
 #include "collective.h"
 #include "utils.h"
 
 const int COLLECTIVE_DEBUG = 0;
 
-/*************************** DECLARE YOUR HELPER FUNCTIONS HERE ************************/
 
 
 
@@ -96,5 +93,4 @@ void HPC_Prefix(const HPC_Prefix_func* prefix_func, const void *sendbuf, void *r
 }
 
 
-/*************************** DEFINE YOUR HELPER FUNCTIONS HERE ************************/
 
