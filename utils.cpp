@@ -6,7 +6,6 @@ void write_array_by_rank(MPI_Comm comm, const char* description, const int* arra
     MPI_Comm_size(comm, &size);
 
     if (rank != 0) {
-        /*Wait for the previous process to indicate it is finished printing. */
         MPI_Recv(&rank, 1, MPI_INT, rank - 1, 0xFEEF, comm, MPI_STATUS_IGNORE);
         rank++;
     }
